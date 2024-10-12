@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <form
+      id="main-form"
+      class="card w-75 p-5 row g-3 needs-validation mx-auto my-auto"
+      novalidate
+    >
+      <div class="mb-3">
+        <label for="company_name" class="form-label">Nazwa firmy</label>
+        <input required type="text" class="form-control" id="company_name" />
+      </div>
+      <div class="mb-3">
+        <label for="company_nip" class="form-label">NIP</label>
+        <input required type="text" class="form-control" id="company_nip" />
+      </div>
+      <div class="mb-3">
+        <label for="company_address_city" class="form-label">Miasto</label>
+        <input
+          required
+          type="text"
+          class="form-control"
+          id="company_address_city"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="company_address_street" class="form-label">Ulica</label>
+        <input
+          required
+          type="text"
+          class="form-control"
+          id="company_address_street"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="company_address_number" class="form-label">Nr domu</label>
+        <input
+          required
+          type="number"
+          class="form-control"
+          id="company_address_number"
+        />
+      </div>
+      <div class="form-floating mb-3">
+        <textarea
+          class="form-control"
+          placeholder="Dodaj uwagi"
+          id="comments"
+        ></textarea>
+        <label for="comments">Uwagi</label>
+      </div>
+      <div class="form-floating mb-3">
+        <select
+          required
+          class="form-select"
+          id="sector"
+          aria-label="Wybierz branżę"
+        >
+          <option value="" hidden>-</option>
+          <option value="budowlana">Budowlana</option>
+          <option value="energetyczna">Energetyczna</option>
+          <option value="finanse">Finanse</option>
+        </select>
+        <label for="sector">Wybierz branżę</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="active" />
+        <label class="form-check-label" for="active"> Aktywny </label>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="submit" class="btn btn-primary">Wyślij</button>
+        <button type="button" id="fill-button" class="btn btn-secondary">
+          Uzupełnij
+        </button>
+        <button type="button" id="clear-button" class="btn btn-secondary">
+          Wyczyść
+        </button>
+      </div>
+    </form>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
