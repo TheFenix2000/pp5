@@ -10,6 +10,7 @@
   <body>
     <form
       id="main-form"
+      style="display: block; max-width: 600px"
       class="card w-75 p-5 row g-3 needs-validation mx-auto my-auto"
       novalidate
     >
@@ -84,6 +85,18 @@
         </button>
       </div>
     </form>
+
+    <div class="card w-75 p-5 row g-3 mx-auto my-auto" id="list-view" style="display: none;">
+      <button
+        id="add-customer-btn"
+        type="submit"
+        class="btn btn-primary"
+      >
+        Dodaj klienta
+      </button>
+      <ul id="customer-list" class="list-group"></ul>
+    </div>
+
     <script src="./script.js" defer></script>
   </body>
 </html>
